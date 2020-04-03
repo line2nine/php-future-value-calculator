@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] = "POST"){
     $rate = $_POST["rate"];
     $year = $_POST["year"];
     $old_investment = $investment;
-    for ($i = 0; $i < $year; $i++) {
+    for ($i = 0; $i <= $year; $i++) {
         $future_value = $investment + ($investment * $rate * 0.01);
         $investment = $future_value;
     }
